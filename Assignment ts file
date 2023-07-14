@@ -1,0 +1,848 @@
+//-----2-----//---------------------------------------------------------
+//--Personal message---///
+console.log("\n")
+console.log("\x1b[1;4mPersonal message.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+
+console.log("Hello my friend, would you like to learn some python today");
+
+//-----3-----//-----------------------------------------------------------
+//--name cases---//
+console.log("\n")
+console.log("\x1b[1;4mName Case.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let names:string = "MiCkEy mOuSe";
+console.log("name" +" "+  names)
+
+// upper case
+console.log("\x1b[1mUpper case name\x1b[0m" +" = " + names.toUpperCase());
+
+// lower case
+console.log("\x1b[1mLower case name\x1b[0m" +" = " + names.toLowerCase());
+
+// Title case
+console.log("\x1b[1mTitle case\x1b[0m" +" = " + names.charAt(0).toUpperCase() + names.slice(1).toLowerCase());
+
+//-----4 + 5-----//-------------------------------------------------------
+//-- Famous quote--//
+console.log("\n")
+console.log("\x1b[1;4mFamous Quote.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let author: string = "Albert Einstein";
+let quote: string = "Imagination is more important than knowledge.";
+
+console.log(`${author} once said, "${quote}"`);
+
+//------6------//---------------------------------------------------------
+//----- Stripping Names------//
+console.log("\n")
+console.log("\x1b[1;4mStripping Names.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let nameWithWhitespace: string = "\t  Albert Einstein \n";
+
+console.log("Name with whitespace:");
+console.log(nameWithWhitespace);
+
+// Stripping whitespace using trim()
+let strippedName: string = nameWithWhitespace.trim();
+
+console.log("Name after stripping whitespace:");
+console.log(strippedName);
+
+
+//------ 7 + 8 ------//---------------------------------------------------------
+//----- Number Eight------//
+console.log("\n")
+console.log("\x1b[1;4mNumber Eight.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+// Addition 
+console.log("Addition:\t ", 3 + 5);
+console.log("---------------------");
+
+// Subtraction 
+console.log("Subtraction:\t ", 12 - 4);
+console.log("---------------------");
+
+// Multiplication 
+console.log("Multiplication:\t ", 2 * 4);
+console.log("---------------------");
+
+// Division
+console.log("Division:\t ", 64 / 8);
+console.log("---------------------");
+
+
+//------ 9 ------//---------------------------------------------------------
+//----- Favourite Number------//
+console.log("\n")
+console.log("\x1b[1;4mFavourite Number.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let favoriteNumber: number = 7;
+let message: string = `My favorite number is ${favoriteNumber}.`;
+
+console.log(message);
+
+//------ 10 ------//---------------------------------------------------------
+//----- Favourite Number------//
+console.log("\n")
+console.log("\x1b[1;4mAdding Comments.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+console.log("Several comments have been mentioned on code");
+
+//------ 11 ------//---------------------------------------------------------
+//----- Names------//
+console.log("\n")
+console.log("\x1b[1;4mNames.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let namess: string[] = ["Bruce", "Santa", "Harley", "Justin"];
+
+for (let i = 0; i < namess.length; i++) {
+  console.log(namess[i]);
+}
+
+//------ 12 ------//---------------------------------------------------------
+//----- Greetings------//
+console.log("\n")
+console.log("\x1b[1;4mGreetings.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let Name: string[] = ["Bruce", "Santa", "Harley", "Justin"];
+let messages: string = "Hello, ";
+
+for (let i = 0; i < Name.length; i++) {
+  console.log(messages + Name[i] + "!");
+}
+
+//------ 13 ------//---------------------------------------------------------
+//----- Your Own Array------//
+console.log("\n")
+console.log("\x1b[1;4mYour Own Array.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let favoriteTransportation: string[] = ["car", "motorcycle", "bicycle", "scooter"];
+
+for (let i = 0; i < favoriteTransportation.length; i++) {
+  console.log("I would like to own a " + favoriteTransportation[i] + ".");
+}
+
+//------ 14 ------//---------------------------------------------------------
+//----- Guest List------//
+console.log("\n")
+console.log("\x1b[1;4mGuest List.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let dinnerGuests: string[] = ["Chatur", "Raju", "Wangru"];
+
+for (let i = 0; i < dinnerGuests.length; i++) {
+  console.log("Dear " + dinnerGuests[i] + ", you are cordially invited to dinner. Please join us for an evening of delightful conversations.");
+}
+
+//------ 15 ------//---------------------------------------------------------
+//----- Changing Guest List------//
+console.log("\n")
+console.log("\x1b[1;4mChanging Guest List.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let dinnerGuest: string[] = ["Chatur", "Raju", "Wangru"];
+let guestUnableToAttend: string = "Raju";
+let newGuest: string = "Farhan";
+
+console.log(guestUnableToAttend + " is unable to attend the dinner.");
+
+// Replace the guest who can't make it with the new guest
+let indexOfUnableGuest: number = dinnerGuest.indexOf(guestUnableToAttend);
+if (indexOfUnableGuest !== -1) {
+  dinnerGuest[indexOfUnableGuest] = newGuest;
+}
+
+// Send out the new set of invitations
+for (let i = 0; i < dinnerGuest.length; i++) {
+  console.log("Dear " + dinnerGuest[i] + ", you are cordially invited to dinner. Please join us for an evening of delightful conversations.");
+}
+
+//------ 16 ------//---------------------------------------------------------
+//----- More Guest------//
+console.log("\n")
+console.log("\x1b[1;4mMore Guest.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let dinnerGuestss: string[] = ["Chatur", "Raju", "Wangru"];
+let guestsUnableToAttend: string = "Raju";
+let newGuesst: string = "Farhan";
+
+console.log("Good news! We found a bigger dinner table.");
+
+// Replace the guest who can't make it with the new guest
+let indexOfUnableGuests: number = dinnerGuestss.indexOf(guestsUnableToAttend);
+if (indexOfUnableGuests !== -1) {
+  dinnerGuestss[indexOfUnableGuests] = newGuesst;
+}
+
+// Add new guests to the array
+dinnerGuestss.unshift("virus"); // Add at the beginning
+dinnerGuestss.splice(Math.floor(dinnerGuestss.length / 2), 0, "Millimeter"); // Add in the middle
+dinnerGuestss.push("Priya"); // Add at the end
+
+// Send out the new set of invitations
+for (let i = 0; i < dinnerGuestss.length; i++) {
+  console.log("Dear " + dinnerGuestss[i] + ", you are cordially invited to dinner. Please join us for an evening of delightful conversations.");
+}
+
+//------ 17 ------//---------------------------------------------------------
+//----- Shrinking Guest List------//
+console.log("\n")
+console.log("\x1b[1;4mShrinking Guest List.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let DinnerGuests: string[] = ["chatur", "Raju", "Wangru", "Farhan", "Virus", "Millimiter"];
+
+console.log("Apologies, we can only invite two people for dinner.");
+
+// Remove guests until only two names remain
+while (DinnerGuests.length > 2) {
+  let RemovedGuesst: string = DinnerGuests.pop();
+  console.log("Sorry, " + RemovedGuesst + ", we can't invite you to dinner.");
+}
+
+// Send invitations to the remaining two guests
+for (let i = 0; i < DinnerGuests.length; i++) {
+  console.log("Dear " + DinnerGuests[i] + ", you are still invited to dinner. Please join us for an evening of delightful conversations.");
+}
+
+// Clear the list of guests
+DinnerGuests = [];
+
+console.log("Final guest list:", DinnerGuests);
+
+//------ 18 ------//---------------------------------------------------------
+//----- Seeing the World------//
+console.log("\n")
+console.log("\x1b[1;4mSeeing the World.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let placesToVisit: string[] = ["Italy", "U.A.E", "Zimbawe", "Pakistan", "Canada"];
+
+// Print the array in its original order
+console.log("Original Order:", placesToVisit);
+
+// Print the array in alphabetical order without modifying the actual list
+console.log("Alphabetical Order:", [...placesToVisit].sort());
+
+// Show that the array is still in its original order
+console.log("Original Order (Unchanged):", placesToVisit);
+
+// Print the array in reverse alphabetical order without changing the order of the original list
+console.log("Reverse Alphabetical Order:", [...placesToVisit].sort().reverse());
+
+// Show that the array is still in its original order
+console.log("Original Order (Unchanged):", placesToVisit);
+
+// Reverse the order of the list
+placesToVisit.reverse();
+console.log("Reversed Order:", placesToVisit);
+
+// Reverse the order of the list again
+placesToVisit.reverse();
+console.log("Original Order (Unchanged):", placesToVisit);
+
+// Sort the array in alphabetical order
+placesToVisit.sort();
+console.log("Alphabetical Order:", placesToVisit);
+
+// Sort the array in reverse alphabetical order
+placesToVisit.sort().reverse();
+console.log("Reverse Alphabetical Order:", placesToVisit);
+
+
+//------ 19 ------//---------------------------------------------------------
+//----- Dinner Guests------//
+console.log("\n")
+console.log("\x1b[1;4mDinner Guests.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let dinnerrGuests: string[] = ["Chatur", "Raju", "Wangru", "Farhan", "Virus", "Millimiter"];
+
+let numberOfGuests: number = dinnerrGuests.length;
+
+console.log("You are inviting " + numberOfGuests + " people to dinner.");
+
+//------ 20 ------//---------------------------------------------------------
+//----- -------//
+console.log("\n")
+console.log("\x1b[1;4m20.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let mountains: string[] = ["Mount Everest", "K2", "Kangchenjunga", "Matterhorn", "Mount Kilimanjaro"];
+
+console.log("List of Mountains:", mountains);
+
+//------ 21 ------//---------------------------------------------------------
+//----- -------//
+console.log("\n")
+console.log("\x1b[1;4m21.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let country1 = {
+    name: "United States of America",
+    capital: "Washington, D.C.",
+    population: 331000000,
+    language: "English"
+  };
+  
+  let country2 = {
+    name: "Japan",
+    capital: "Tokyo",
+    population: 126000000,
+    language: "Japanese"
+  };
+  
+  let country3 = {
+    name: "Germany",
+    capital: "Berlin",
+    population: 83000000,
+    language: "German"
+  };
+  
+  console.log("Country 1:", country1);
+  console.log("Country 2:", country2);
+  console.log("Country 3:", country3);
+  
+//------ 22 ------//---------------------------------------------------------
+//-----Intentional Error -------//
+console.log("\n")
+console.log("\x1b[1;4mIntentional Error.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let numbers: number[] = [1, 2, 3, 4, 5];
+
+// Intentional error: accessing an invalid index
+console.log(numbers[10]);  // Produces an index error
+
+// Corrected code: accessing a valid index
+console.log(numbers[2]);  // Prints the element at index 2
+
+//------ 23 ------//---------------------------------------------------------
+//-----Conditional Tests -------//
+console.log("\n")
+console.log("\x1b[1;4mConditional Tests.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+// let car: string = 'subaru';
+
+// console.log("Is car == 'subaru'? I predict true.");
+// console.log(car == 'subaru');
+
+// console.log("Is car == 'honda'? I predict false.");
+// console.log(car == 'honda');
+
+// console.log("Is car != 'toyota'? I predict true.");
+// console.log(car != 'toyota');
+
+// console.log("Is car != 'subaru'? I predict false.");
+// console.log(car != 'subaru');
+
+// console.log("Is car === 'subaru'? I predict true.");
+// console.log(car === 'subaru');
+
+// console.log("Is car === 'Subaru'? I predict false.");
+// console.log(car === 'Subaru');
+
+// console.log("Is car !== 'honda'? I predict true.");
+// console.log(car !== 'honda');
+
+// console.log("Is car !== 'subaru'? I predict false.");
+// console.log(car !== 'subaru');
+
+// console.log("Is car < 'volvo'? I predict true.");
+// console.log(car < 'volvo');
+
+// console.log("Is car > 'mercedes'? I predict false.");
+// console.log(car > 'mercedes');
+
+//------ 24 ------//---------------------------------------------------------
+//-----More Conditional Tests -------//
+console.log("\n")
+console.log("\x1b[1;4mMore Conditional Tests.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+//------ 25 ------//---------------------------------------------------------
+//-----Alien color#1 -------//
+console.log("\n")
+console.log("\x1b[1;4mAlien color#1 .\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+console.log("\x1b[1mAlien color#1(1) .\x1b[0m");
+
+let alien_color11: string = 'green';
+
+if (alien_color11 === 'green') {
+  console.log("Congratulations! You just earned 5 points!");
+}
+console.log("\x1b[1mAlien color#1(2) .\x1b[0m");
+
+let alien_color12: string = 'yellow';
+
+if (alien_color12 === 'green') {
+  console.log("Congratulations! You just earned 5 points!");
+}
+
+//------ 26 ------//---------------------------------------------------------
+//-----Alien color#2 -------//
+console.log("\n")
+console.log("\x1b[1;4mAlien color#2.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+console.log("\x1b[1mAlien color#2(1) .\x1b[0m");
+
+let alien_color21: string = 'green';
+
+if (alien_color21 === 'green') {
+  console.log("Congratulations! You just earned 5 points for shooting the alien.");
+} else {
+  console.log("Congratulations! You just earned 10 points.");
+}
+console.log("\x1b[1mAlien color#2(2) .\x1b[0m");
+
+let alien_color22: string = 'red';
+
+if (alien_color22 === 'green') {
+  console.log("Congratulations! You just earned 5 points for shooting the alien.");
+} else {
+  console.log("Congratulations! You just earned 10 points.");
+}
+
+//------ 27 ------//---------------------------------------------------------
+//-----Alien color#3 -------//
+console.log("\n")
+console.log("\x1b[1;4mAlien color#3.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+console.log("\x1b[1mAlien color#3(1) .\x1b[0m");
+
+let alien_color31: string = 'green';
+
+if (alien_color31 === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+} else if (alien_color31 === 'yellow') {
+  console.log("Congratulations! You just earned 10 points.");
+} else if (alien_color31 === 'red') {
+  console.log("Congratulations! You just earned 15 points.");
+}
+
+console.log("\x1b[1mAlien color#3(2) .\x1b[0m");
+
+let alien_color32: string = 'yellow';
+
+if (alien_color31 === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+} else if (alien_color32 === 'yellow') {
+  console.log("Congratulations! You just earned 10 points.");
+} else if (alien_color32 === 'red') {
+  console.log("Congratulations! You just earned 15 points.");
+}
+
+console.log("\x1b[1mAlien color#3(3) .\x1b[0m");
+
+let alien_color33: string = 'red';
+
+if (alien_color33 === 'green') {
+  console.log("Congratulations! You just earned 5 points.");
+} else if (alien_color33 === 'yellow') {
+  console.log("Congratulations! You just earned 10 points.");
+} else if (alien_color33 === 'red') {
+  console.log("Congratulations! You just earned 15 points.");
+}
+
+//------ 28 ------//---------------------------------------------------------
+//-----Stages of Life -------//
+console.log("\n")
+console.log("\x1b[1;4mStages of Life.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let age: number = 25;
+
+if (age < 2) {
+  console.log("The person is a baby.");
+} else if (age >= 2 && age < 4) {
+  console.log("The person is a toddler.");
+} else if (age >= 4 && age < 13) {
+  console.log("The person is a kid.");
+} else if (age >= 13 && age < 20) {
+  console.log("The person is a teenager.");
+} else if (age >= 20 && age < 65) {
+  console.log("The person is an adult.");
+} else {
+  console.log("The person is an elder.");
+}
+
+//------ 29 ------//---------------------------------------------------------
+//-----Favorite Fruit -------//
+console.log("\n")
+console.log("\x1b[1;4mFavorite Fruit.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+// let favorite_fruits: string[] = ["banana", "strawberry", "mango"];
+
+// if (favorite_fruits.includes("banana")) {
+//   console.log("You really like bananas!");
+// }
+
+// if (favorite_fruits.includes("strawberry")) {
+//   console.log("You really like strawberries!");
+// }
+
+// if (favorite_fruits.includes("mango")) {
+//   console.log("You really like mangoes!");
+// }
+
+// if (favorite_fruits.includes("apple")) {
+//   console.log("You really like apples!");
+// }
+
+// if (favorite_fruits.includes("orange")) {
+//   console.log("You really like oranges!");
+// }
+
+
+
+//------ 30 ------//---------------------------------------------------------
+//-----Hello Admin -------//
+console.log("\n")
+console.log("\x1b[1;4mHello Admin.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let usernames: string[] = ['admin', 'Eric', 'John', 'Jane', 'Alice'];
+
+for (let i = 0; i < usernames.length; i++) {
+  if (usernames[i] === 'admin') {
+    console.log("Hello admin, would you like to see a status report?");
+  } else {
+    console.log("Hello " + usernames[i] + ", thank you for logging in again.");
+  }
+}
+
+//------ 31 ------//---------------------------------------------------------
+//-----No Users -------//
+console.log("\n")
+console.log("\x1b[1;4mNo Users.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let users: string[] = ["John", "Jane", "Alice"];
+
+if (users.length === 0) {
+  console.log("We need to find some users!");
+} else {
+  users = []; // Remove all usernames from the array
+  console.log("All usernames have been removed.");
+}
+
+//------ 32 ------//---------------------------------------------------------
+//-----Checking Usernames -------//
+console.log("\n")
+console.log("\x1b[1;4mChecking Usernames.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let current_users: string[] = ["John", "Jane", "Alice", "Bob", "Eva"];
+let new_users: string[] = ["John", "David", "Linda", "Bob", "Oliver"];
+
+for (let i = 0; i < new_users.length; i++) {
+  let new_username = new_users[i];
+  let isTaken = false;
+
+  for (let j = 0; j < current_users.length; j++) {
+    if (current_users[j].toLowerCase() === new_username.toLowerCase()) {
+      isTaken = true;
+      break;
+    }
+  }
+
+  if (isTaken) {
+    console.log(`Sorry, the username '${new_username}' is already taken. Please enter a new username.`);
+  } else {
+    console.log(`The username '${new_username}' is available.`);
+  }
+}
+
+//------ 33 ------//---------------------------------------------------------
+//-----Ordinal Numbers -------//
+console.log("\n")
+console.log("\x1b[1;4mOrdinal Numbers.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let Numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let i = 0; i < numbers.length; i++) {
+  let number = Numbers[i];
+  let ordinalEnding: string;
+
+  if (number === 1) {
+    ordinalEnding = "st";
+  } else if (number === 2) {
+    ordinalEnding = "nd";
+  } else if (number === 3) {
+    ordinalEnding = "rd";
+  } else {
+    ordinalEnding = "th";
+  }
+
+  console.log(number + ordinalEnding);
+}
+
+//------ 34 ------//---------------------------------------------------------
+//-----Pizzas -------//
+console.log("\n")
+console.log("\x1b[1;4mPizzas.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let pizzas: string[] = ["Pepperoni", "Margherita", "BBQ Chicken"];
+
+for (let i = 0; i < pizzas.length; i++) {
+  let pizza = pizzas[i];
+  console.log(pizza);
+}
+
+console.log("");
+
+for (let i = 0; i < pizzas.length; i++) {
+  let pizza = pizzas[i];
+  console.log("I like " + pizza + " pizza.");
+}
+
+console.log("");
+
+console.log("I really love pizza!");
+
+//------ 35 ------//---------------------------------------------------------
+//-----Animals -------//
+console.log("\n")
+console.log("\x1b[1;4mAnimals.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+let animals: string[] = ["Dog", "Cat", "Rabbit"];
+
+for (let i = 0; i < animals.length; i++) {
+  let animal = animals[i];
+  console.log(animal);
+}
+
+console.log("");
+
+for (let i = 0; i < animals.length; i++) {
+  let animal = animals[i];
+  console.log("A " + animal.toLowerCase() + " would make a great pet.");
+}
+
+console.log("");
+
+console.log("Any of these animals would make a great pet!");
+
+//------ 36 ------//---------------------------------------------------------
+//-----T-Shirt -------//
+console.log("\n")
+console.log("\x1b[1;4mT-Shirt.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function make_shirt(size: string, message: string) {
+    console.log("Creating a " + size + " T-shirt with the message: '" + message + "'.");
+  }
+  
+  // Calling the function
+  make_shirt("Small", "Hello, World!");
+
+//------ 37 ------//---------------------------------------------------------
+//-----Large Shirts -------//
+console.log("\n")
+console.log("\x1b[1;4mLarge Shirts.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function Large_shirt(size: string = "large", message: string = "I love TypeScript") {
+    console.log("Creating a " + size + " T-shirt with the message: '" + message + "'.");
+  }
+  
+  // Creating a large shirt with the default message
+  Large_shirt();
+  
+  // Creating a medium shirt with the default message
+  Large_shirt("medium");
+  
+  // Creating a custom-sized shirt with a different message
+  Large_shirt("small", "Hello, OpenAI!");
+
+//------ 38 ------//---------------------------------------------------------
+//-----Cities -------//
+console.log("\n")
+console.log("\x1b[1;4mCities.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function describe_city(city: string, country: string = "Unknown Country") {
+    console.log(city + " is in " + country + ".");
+  }
+  
+  // Calling the function for three different cities
+  describe_city("Karachi", "Pakistan");
+  describe_city("New York", "United States");
+  describe_city("Sydney"); // Using the default country value
+  
+
+
+//------ 39 ------//---------------------------------------------------------
+//-----City Names -------//
+console.log("\n")
+console.log("\x1b[1;4mCity Names.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function city_country(city: string, country: string): string {
+    return city + ", " + country;
+  }
+  
+  // Calling the function with three city-country pairs
+  let location1 = city_country("Lahore", "Pakistan");
+  let location2 = city_country("Paris", "France");
+  let location3 = city_country("Tokyo", "Japan");
+  
+  console.log(location1);
+  console.log(location2);
+  console.log(location3);
+
+//------ 40 ------//---------------------------------------------------------
+//-----Album -------//
+console.log("\n")
+console.log("\x1b[1;4mAlbum.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function make_album(artist: string, title: string, tracks?: number): object {
+    let album: any = {
+      artist: artist,
+      title: title
+    };
+  
+    if (tracks) {
+      album.tracks = tracks;
+    }
+  
+    return album;
+  }
+  
+  // Calling the function to create three album objects
+  let album1 = make_album("Artist 1", "Album 1");
+  let album2 = make_album("Artist 2", "Album 2", 12);
+  let album3 = make_album("Artist 3", "Album 3", 8);
+  
+  console.log(album1);
+  console.log(album2);
+  console.log(album3);
+
+  
+//------ 41 ------//---------------------------------------------------------
+//-----Magicians -------//
+console.log("\n")
+console.log("\x1b[1;4mMagicians.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function show_magicians(magicians: string[]) {
+    for (let i = 0; i < magicians.length; i++) {
+      console.log(magicians[i]);
+    }
+  }
+  
+  // Creating an array of magician's names
+  let magicianNames: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+  
+  // Calling the show_magicians() function with the magicianNames array
+  show_magicians(magicianNames);
+
+//------ 42 ------//---------------------------------------------------------
+//-----Great Magicians -------//
+console.log("\n")
+console.log("\x1b[1;4mGreat Magicians.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+  
+function make_great(magicians: string[]) {
+    for (let i = 0; i < magicians.length; i++) {
+      magicians[i] = "the Great " + magicians[i];
+    }
+  }
+  
+  function Great_magicians(magicians: string[]) {
+    for (let i = 0; i < magicians.length; i++) {
+      console.log(magicians[i]);
+    }
+  }
+  
+  // Creating an array of magician's names
+  let MagicianNames: string[] = ["Harry Houdini", "David Copperfield", "Penn Jillette", "Teller"];
+  
+  // Modifying the magicianNames array using the make_great() function
+  make_great(MagicianNames);
+  
+  // Calling the show_magicians() function to display the modified list
+  Great_magicians(MagicianNames);
+
+  //------ 43 ------//---------------------------------------------------------
+//-----Unchanges Magicians -------//
+console.log("\n")
+console.log("\x1b[1;4mUnchanges Magicians.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+  
+  
+//------ 44 ------//---------------------------------------------------------
+//-----Sandwiches -------//
+console.log("\n")
+console.log("\x1b[1;4mSandwiches.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function order_sandwich(...items: string[]) {
+    console.log("Sandwich order:");
+  
+    if (items.length === 0) {
+      console.log("No items selected.");
+    } else {
+      console.log("Items:");
+  
+      for (let i = 0; i < items.length; i++) {
+        console.log("- " + items[i]);
+      }
+    }
+  
+    console.log(""); // Print an empty line for separation
+  }
+  
+  // Calling the function with different number of arguments
+  order_sandwich("Bread", "Ham", "Cheese");
+  order_sandwich("Bread", "Turkey");
+  order_sandwich();
+  
+//------ 45 ------//---------------------------------------------------------
+//-----Cars -------//
+console.log("\n")
+console.log("\x1b[1;4mCars.\x1b[0m");
+console.log("-------------------------------------------------------------------\n");
+
+function store_car_info(manufacturer: string, modelName: string, color: string, year: string, ...kwargs: any): object {
+    let carInfo: any = {
+      manufacturer: manufacturer,
+      modelName: modelName,
+      color: color,
+      year: year,
+    };
+  
+    // Store additional key-value pairs
+    for (let key in kwargs) {
+      carInfo[key] = kwargs[key];
+    }
+  
+    return carInfo;
+  }
+  
+  // Calling the function with required information and additional key-value pairs
+  let car = store_car_info("Ford", "Mustang", "Red", "2022");
+  
+  console.log(car);
+  
+  console.log("-----------------------------THE END--------------------------------------\n");
+  
